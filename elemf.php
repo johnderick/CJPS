@@ -24,6 +24,12 @@ class collect extends Formsheet{
 			'rows'=> 4,
 		);
 		$this->section($metrics);
+		
+		$this->SetFillColor(193,193,193);
+		//$this->DrawBox(.2,.09,16,.89,'F');
+		$this->DrawBox(3.56,2,6.9,1.2,'F');
+		
+		
 		$this->GRID['font_size']= 9;
 		$this->leftText(7,1.8,'CHILD JESUS OF PRAGUE SCHOOL',0,'b');
 		$this->GRID['font_size']= 12;
@@ -47,11 +53,32 @@ class collect extends Formsheet{
 		$this->GRID['font_size']= 8.2;
 		//$this->leftText(x,y,'Pupils Name',0,'b');
 		//$this->DrawBox($x,$y,$w,$h,$fill=null);
-		$this->DrawBox(3.5,0,12.7,.89,$fill=null);
-		$this->DrawBox(3.5,1.1,7.7,.89,$fill=null);
-		$this->DrawBox(12,1.1,5,.89,$fill=null);
-		$this->leftText(.3,.65,'Pupils Name',0,'b');
-		$this->leftText(.3,1.7,'Grade/Section',0,'b');
+		//$this->DrawBox(0,0,.2,.27,'F');
+		
+		
+		$this->SetFillColor(193,193,193);
+		$this->DrawBox(.2,.09,16,.89,'F');
+		$this->DrawBox(.2,1.2,16,.89,'F');
+		$this->DrawBox(.2,2.3,16,.89,'F');
+		
+		$this->SetFillColor(97,97,97);
+		$this->DrawBox(0,.09,.2,.89,'F');
+		$this->DrawBox(0,1.2,.2,.89,'F');
+		$this->DrawBox(0,2.3,.2,.89,'F');
+		
+		$this->SetFillColor(97,97,97);
+		$this->DrawBox(3.5,0,12.7,.89,'null');
+		$this->DrawBox(3.5,1.1,7.7,.89,'null');
+		$this->DrawBox(12.3,1.1,3.89,.89,'null');
+		$this->DrawBox(3.5,2.2,12.7,.89,'null');
+		$this->leftText(.3,.69,'Pupils Name',0,'b');
+		$this->leftText(.3,1.8,'Grade/Section',0,'b');
+		$this->leftText(.3,2.94,'Adviser',0,'b');
+		$this->GRID['font_size']= 9.5;
+		$this->leftText(11.5,1.8,'SY',0,'b');
+
+		
+		
 		
 		//$this->DrawImage(0,0,4.28,9,'../CJPS/Elem123Front.jpeg');
 	}
